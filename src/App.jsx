@@ -109,35 +109,49 @@ export default function App() {
 
       {/* HERO */}
       <section id="home" className="relative z-10 min-h-screen flex items-center px-6">
-        <div className="max-w-6xl mx-auto w-full pt-24">
-          <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald/40 bg-emerald/10 text-emerald text-xs font-mono tracking-wide">
-            🏆 2nd place — Build with Gemma Hackathon 2026
-          </p>
-          <h1 className="mt-6 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-            Aymane <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon via-emerald to-violet">KOURBISSE</span>
-          </h1>
-          <p className="mt-3 text-xl font-medium text-neon">AI & Applications Developer</p>
-          <p className="mt-6 max-w-xl text-gray-400 leading-relaxed">
-            Specialized in <span className="text-white">Machine Learning, GenAI & AI Agents</span> — RAG, LLM, Computer Vision. I build intelligent solutions that turn data into decisions.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-4">
-            <a href="#projects" onClick={() => scrollTo("projects")} className="px-6 py-3 rounded-full bg-neon text-ink font-semibold hover:shadow-lg hover:shadow-neon/30 transition-all">
-              View Projects
-            </a>
-            <a href="mailto:Aymane.kourbisse@gmail.com" className="px-6 py-3 rounded-full border border-gray-600 hover:border-neon hover:text-neon transition-colors">
-              Contact me
-            </a>
-          </div>
-          <div className="mt-12 flex gap-3 text-2xl">
-            {[
-              { icon: "🐙", href: "https://github.com/KOURBISSE01" },
-              { icon: "✉️", href: "mailto:Aymane.kourbisse@gmail.com" },
-              { icon: "📄", href: "https://kouris01.github.io/portfolio/" },
-            ].map((s, i) => (
-              <a key={i} href={s.href} target="_blank" rel="noopener" className="w-11 h-11 flex items-center justify-center rounded-lg border border-gray-700 hover:border-neon hover:text-neon transition-colors">
-                {s.icon}
+        <div className="max-w-6xl mx-auto w-full pt-24 grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-emerald/40 bg-emerald/10 text-emerald text-xs font-mono tracking-wide">
+              🏆 2nd place — Build with Gemma Hackathon 2026
+            </p>
+            <h1 className="mt-6 text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+              Aymane <span className="text-transparent bg-clip-text bg-gradient-to-r from-neon via-emerald to-violet">KOURBISSE</span>
+            </h1>
+            <p className="mt-3 text-xl font-medium text-neon">AI & Applications Developer</p>
+            <p className="mt-6 max-w-xl text-gray-400 leading-relaxed">
+              Specialized in <span className="text-white">Machine Learning, GenAI & AI Agents</span> — RAG, LLM, Computer Vision. I build intelligent solutions that turn data into decisions.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a href="#projects" onClick={() => scrollTo("projects")} className="px-6 py-3 rounded-full bg-neon text-ink font-semibold hover:shadow-lg hover:shadow-neon/30 transition-all">
+                View Projects
               </a>
-            ))}
+              <a href="mailto:Aymane.kourbisse@gmail.com" className="px-6 py-3 rounded-full border border-gray-600 hover:border-neon hover:text-neon transition-colors">
+                Contact me
+              </a>
+            </div>
+            <div className="mt-12 flex gap-3 text-2xl">
+              {[
+                { icon: "🐙", href: "https://github.com/KOURBISSE01" },
+                { icon: "✉️", href: "mailto:Aymane.kourbisse@gmail.com" },
+                { icon: "📄", href: "https://kourbisse01.github.io/portfolio/" },
+              ].map((s, i) => (
+                <a key={i} href={s.href} target="_blank" rel="noopener" className="w-11 h-11 flex items-center justify-center rounded-lg border border-gray-700 hover:border-neon hover:text-neon transition-colors">
+                  {s.icon}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Profile image */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-neon via-emerald to-violet opacity-60 blur-lg" />
+              <img
+                src="profile.jpg"
+                alt="Aymane KOURBISSE"
+                className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-neon/70 shadow-2xl"
+              />
+            </div>
           </div>
         </div>
       </section>
