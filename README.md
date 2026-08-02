@@ -2,29 +2,25 @@
 
 Portfolio professionnel de **Aymane KOURBISSE**, Développeur IA & Applications.
 
-Site vitrine one-page présentant le profil, les compétences et les projets phares
-(hackathon NutriVision, prédiction de la qualité de l'air, chatbot WhatsApp, RPA,
-application mobile).
+## 🎨 Stack
+- React 18 + Vite
+- Tailwind CSS
+- Three.js (fond particules 3D interactif)
 
-## 💻 Stack
+## 🗂️ Branches
+- `main` : **code source** (React/Tailwind/Three.js)
+- `gh-pages` : build statique servi par GitHub Pages
 
-- HTML
-- CSS
-- JavaScript (vanilla)
-
-## 🚀 Visualisation
-
-Ouvrez `index.html` dans un navigateur, ou exécutez un serveur statique :
-
+## 🚀 Développement
 ```bash
-# dans ce dossier
-python -m http.server 8000
-# → http://localhost:8000
+npm install
+npm run dev      # serveur local
+npm run build    # build → dist/
 ```
 
-Déployable sur **GitHub Pages** (branch `gh-pages` ou /docs).
+## ☝️ Rédeploiement
+1. `npm run build`
+2. Copy `dist/*` dans la branche `gh-pages` puis `git push`
 
 ## 📬 Contact
-
-- Email : Aymane.kourbisse@gmail.com
-- GitHub : [KOURBISSE01](https://github.com/KOURBISSE01)
+Email : Aymane.kourbisse@gmail.com · GitHub : [KOURBISSE01](https://github.com/KOURBISSE01)

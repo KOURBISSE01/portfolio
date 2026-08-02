@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ink text-white antialiased;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2a3456 transparent;
+}
+
+/* Custom scrollbar aesthetic */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #0a0f1e; }
+::-webkit-scrollbar-thumb { background: #2a3456; border-radius: 8px; }
