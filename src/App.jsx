@@ -142,12 +142,12 @@ export default function App() {
             </div>
           </div>
 
-          {/* Profile cutout — transparent background, no circle */}
+          {/* Profile image — original with background */}
           <div className="flex justify-center lg:justify-end">
             <img
-              src="profile-cutout.png"
+              src="profile.png"
               alt="Aymane KOURBISSE"
-              className="w-56 h-72 md:w-72 md:h-96 object-contain drop-shadow-2xl"
+              className="w-56 md:w-72 rounded-2xl object-cover shadow-2xl"
             />
           </div>
         </div>
