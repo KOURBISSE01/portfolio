@@ -5,241 +5,199 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Aymane KOURBISSE — Portfolio</title>
 <meta name="description" content="Portfolio de Aymane KOURBISSE, Développeur IA & Applications. Projets en Intelligence Artificielle, Machine Learning, RAG, Computer Vision et AI Agents." />
-<link rel="stylesheet" href="styles.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Lato:ital,wght@0,400;0,700;1,400&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-theme="dark" class="bg-dark">
 
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="#hero">AK<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#apropos">À propos</a></li>
-      <li><a href="#competences">Compétences</a></li>
-      <li><a href="#projets" class="active">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <a class="btn btn-primary nav-cta" href="#contact">Me contacter</a>
-  </div>
-</nav>
+<div class="shell">
 
-<!-- HERO -->
-<header class="hero" id="top">
-  <div class="hero-bg"></div>
-  <div class="hero-inner">
-    <span class="hero-badge">🏆 2ᵉ place — Build with Gemma Hackathon 2026</span>
-    <h1 class="hero-title">Aymane <span>KOURBISSE</span></h1>
-    <p class="hero-subtitle">Développeur IA &amp; Applications · Machine Learning · GenAI · AI Agents</p>
-    <p class="hero-desc">
-      Je conçois des solutions intelligentes : assistants RAG, vision par ordinateur,
-      modèles de Deep Learning et chatbots. J'aime transformer la donnée en décisions.
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#projets">Voir mes projets</a>
-      <a class="btn btn-outline" href="mailto:Aymane.kourbisse@gmail.com">Me contacter</a>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="profile-card">
+      <div class="avatar">AK</div>
+      <h1 class="profile-name">Aymane<br />KOURBISSE</h1>
+      <p class="profile-role">Développeur IA<br>&amp; Applications</p>
     </div>
-  </div>
-</header>
 
-<!-- À PROPOS -->
-<section class="section" id="apropos">
-  <div class="container">
-    <h2 class="section-title">À propos</h2>
-    <p class="section-lead">
-      Développeur IA junior spécialisé en <strong>Intelligence Artificielle, Machine Learning
-      et GenAI</strong>, avec une expérience pratique en <strong>RAG, LLM, Computer Vision</strong>
-      et développement d'<strong>AI Agents</strong>.
-    </p>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>🎯 Objectif</h3>
-        <p>Contribuer au développement de solutions intelligentes et innovantes dans le cadre d'un stage ou d'une alternance en IA.</p>
-      </div>
-      <div class="about-card">
-        <h3>🏗️ Formation</h3>
-        <p>Licence d'Excellence en Intelligence Artificielle — Faculté des Sciences Ben M'Sik (2025–2026).</p>
-      </div>
-      <div class="about-card">
-        <h3>⚡ Activités</h3>
-        <p>Responsable cellule informatique du Club des Jeunes Motivés. Compétences : résolution de problèmes, autonomie, travail d'équipe.</p>
-      </div>
+    <nav class="sidenav">
+      <a class="pill active" data-section="home" href="#home"><i class="fas fa-house"></i><span>Accueil</span></a>
+      <a class="pill" data-section="apropos" href="#apropos"><i class="fas fa-user"></i><span>À propos</span></a>
+      <a class="pill" data-section="competences" href="#competences"><i class="fas fa-code"></i><span>Compétences</span></a>
+      <a class="pill" data-section="projets" href="#projets"><i class="fas fa-briefcase"></i><span>Projets</span></a>
+      <a class="pill" data-section="contact" href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="social">
+      <a href="https://github.com/KOURBISSE01" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:Aymane.kourbisse@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://kourbisse01.github.io/portfolio/" title="Portfolio"><i class="fas fa-globe"></i></a>
     </div>
-  </div>
-</section>
+  </aside>
 
-<!-- COMPÉTENCES -->
-<section class="section section-alt" id="competences">
-  <div class="container">
-    <h2 class="section-title">Compétences</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>🧠 IA & ML</h3>
-        <span>Machine Learning</span>
-        <span>Deep Learning</span>
-        <span>LSTM</span>
-        <span>TensorFlow</span>
-        <span>Scikit-learn</span>
-        <span>RAG</span>
-        <span>Computer Vision</span>
-      </div>
-      <div class="skill-card">
-        <h3>💻 Langages</h3>
-        <span>Python</span>
-        <span>Java</span>
-        <span>Kotlin</span>
-        <span>C / C++</span>
-        <span>JavaScript</span>
-        <span>SQL</span>
-      </div>
-      <div class="skill-card">
-        <h3>📊 Data</h3>
-        <span>NumPy</span>
-        <span>Pandas</span>
-        <span>Matplotlib</span>
-        <span>Power BI</span>
-        <span>Data Cleaning</span>
-        <span>Data Viz</span>
-      </div>
-      <div class="skill-card">
-        <h3>🛠️ Outils</h3>
-        <span>Flutter</span>
-        <span>Firebase</span>
-        <span>Oracle SQL</span>
-        <span>Selenium</span>
-        <span>Git</span>
-        <span>Linux</span>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- MAIN -->
+  <main class="main">
 
-<!-- PROJETS -->
-<section class="section" id="projets">
-  <div class="container">
-    <h2 class="section-title">Projets</h2>
-    <p class="section-lead">Une sélection de mes réalisations les plus marquantes, du hackathon à la recherche sur la qualité de l'air.</p>
+    <!-- ACCUEIL -->
+    <section class="slide active" id="home">
+      <div class="slide-inner">
+        <span class="hero-tag">🏆 2ᵉ place — Build with Gemma Hackathon 2026</span>
+        <h2 class="hero-title">Bonjour, je suis <span>Aymane KOURBISSE</span></h2>
+        <p class="hero-lede">Développeur IA junior spécialisé en <strong>Machine Learning, GenAI &amp; AI Agents</strong> — RAG, LLM, Computer Vision.</p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary btn-xxl">Voir mes projets</a>
+          <a href="mailto:Aymane.kourbisse@gmail.com" class="btn btn-soft">Me contacter</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="projects-grid">
-
-      <!-- NutriVision -->
-      <article class="project project-featured">
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-accent">🏆 Hackathon</span>
-            <span class="tag">GenAI</span><span class="tag">Computer Vision</span><span class="tag">Agents</span>
+    <!-- À PROPOS -->
+    <section class="slide" id="apropos">
+      <div class="slide-inner">
+        <h2 class="slide-title">À propos</h2>
+        <p class="lede">
+          Je conçois des solutions intelligentes : assistants <strong>RAG</strong>, vision par
+          ordinateur, modèles <strong>Deep Learning</strong> et chatbots. J'aime transformer la
+          donnée en décisions concrètes.
+        </p>
+        <div class="card">
+          <div class="card-item">
+            <h3><i class="fas fa-bullseye"></i> Objectif</h3>
+            <p>Contribuer à des solutions IA innovantes dans le cadre d'un stage ou d'une alternance.</p>
           </div>
-          <h3>🥇 NutriVision — Assistant IA Nutrition</h3>
+          <div class="card-item">
+            <h3><i class="fas fa-graduation-cap"></i> Formation</h3>
+            <p>Licence d'Excellence en IA — FS Ben M'Sik. DEUG Développement informatique.</p>
+          </div>
+          <div class="card-item">
+            <h3><i class="fas fa-star"></i> Activités</h3>
+            <p>Responsable cellule informatique du Club des Jeunes Motivés.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="slide" id="competences">
+      <div class="slide-inner">
+        <h2 class="slide-title">Compétences</h2>
+        <div class="skills-blocks">
+          <div class="card-item">
+            <h3><i class="fas fa-brain"></i> IA &amp; ML</h3>
+            <div class="tags">
+              <span class="tag">Machine Learning</span><span class="tag">Deep Learning</span>
+              <span class="tag">LSTM</span><span class="tag">TensorFlow</span>
+              <span class="tag">Scikit-learn</span><span class="tag">RAG</span>
+              <span class="tag">Computer Vision</span><span class="tag">LLM</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3><i class="fas fa-code"></i> Langages</h3>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">Java</span><span class="tag">Kotlin</span>
+              <span class="tag">C / C++</span><span class="tag">JavaScript</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3><i class="fas fa-chart-line"></i> Data</h3>
+            <div class="tags">
+              <span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+              <span class="tag">Power BI</span><span class="tag">Data Viz</span>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h3><i class="fas fa-toolbox"></i> Outils</h3>
+            <div class="tags">
+              <span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">Oracle SQL</span>
+              <span class="tag">Selenium</span><span class="tag">Git</span><span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="slide" id="projets">
+      <div class="slide-inner">
+        <h2 class="slide-title">Projets</h2>
+        <p class="lede">Mes réalisations les plus marquantes, du hackathon à la recherche sur la qualité de l'air.</p>
+
+        <article class="project featured">
+          <div class="tags"><span class="tag highlight">🏆 Hackathon</span><span class="tag">GenAI</span><span class="tag">Vision</span><span class="tag">Agents</span></div>
+          <h3>NutriVision — Assistant IA Nutrition</h3>
           <p class="project-sub">Projet lauréat « Build with Gemma Hackathon »</p>
           <p>
-            Assistant nutritionnel alimenté par l'IA qui <strong>analyse des photos de plats</strong>,
-            détecte les plats marocains avec <code>YOLOv8</code> (70 plats), fournit une analyse
-            nutritionnelle via <code>Gemma 4B</code> et génère des <strong>recommandations
-            personnalisées</strong> et des plans de repas selon les conditions de santé.
+            Assistant nutritionnel qui <strong>analyse des photos de plats</strong>, détecte les
+            plats marocains avec <code>YOLOv8</code> (70 plats), fournit une analyse via
+            <code>Gemma 4B</code> et génère des <strong>recommandations personnalisées</strong>
+            et des plans de repas.
           </p>
-          <ul class="feature-list">
+          <ul class="plist">
             <li>Architecture <strong>multi-agents</strong> (vision, RAG, nutrition, superviseur)</li>
-            <li>Détection de plats MFOOD YOLOv8 + analyse Gemma LLM</li>
-            <li>RAG avec ChromaDB · Frontend React + Vite · Backend Flask · Firebase</li>
+            <li>Détection MFOOD YOLOv8 + analyse Gemma LLM · RAG ChromaDB</li>
+            <li>Frontend React + Vite · Backend Flask · Firebase</li>
           </ul>
-          <div class="project-links">
-            <a class="btn btn-primary" href="https://github.com/BLD933/NutriVision" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </div>
-      </article>
+          <a class="btn btn-primary" href="https://github.com/BLD933/NutriVision" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code source</a>
+        </article>
 
-      <!-- Qualité de l'air -->
-      <article class="project">
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">Deep Learning</span><span class="tag">LSTM</span></div>
-          <h3>🌫️ Prédiction Qualité de l'Air</h3>
-          <p>
-            Modèle <strong>LSTM</strong> prédisant les concentrations de <strong>PM2.5 à Delhi</strong>
-            à partir de séries temporelles environnementales, avec imputation MICE, feature
-            engineering et système d'alerte AQI.
-          </p>
-          <div class="project-links">
-            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Pr-diction-de-la-Qualit-de-l-Air-par-Deep-Learning" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </div>
-      </article>
+        <div class="card-grid">
+          <article class="project">
+            <div class="tags"><span class="tag">Deep Learning</span><span class="tag">LSTM</span></div>
+            <h3>Prédiction Qualité de l'Air</h3>
+            <p>Modèle <strong>LSTM</strong> prédisant les <strong>PM2.5 à Delhi</strong> à partir de séries temporelles, avec alerte AQI.</p>
+            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Pr-diction-de-la-Qualit-de-l-Air-par-Deep-Learning" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </article>
 
-      <!-- Chatbot FSBM -->
-      <article class="project">
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">Rasa</span><span class="tag">RAG</span><span class="tag">Groq</span></div>
-          <h3>💬 Chatbot Intelligent WhatsApp — FSBM</h3>
-          <p>
-            Chatbot universitaire basé sur <strong>Rasa</strong>, pipeline <strong>RAG</strong>
-            (ChromaDB, sentence-transformers) et <code>Groq</code> : répond aux questions
-            académiques et automatise la récupération d'informations.
-          </p>
-          <div class="project-links">
-            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Chatbot-Intelligent-WhatsApp-FSBM" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </div>
-      </article>
+          <article class="project">
+            <div class="tags"><span class="tag">Rasa</span><span class="tag">RAG</span><span class="tag">Groq</span></div>
+            <h3>Chatbot WhatsApp — FSBM</h3>
+            <p>Chatbot universitaire <strong>Rasa + RAG</strong> (ChromaDB, Groq) répondant aux questions académiques.</p>
+            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Chatbot-Intelligent-WhatsApp-FSBM" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </article>
 
-      <!-- RPA -->
-      <article class="project">
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">RPA</span><span class="tag">Selenium</span><span class="tag">Pandas</span></div>
-          <h3>🤖 Automatisation RPA Bot WhatsApp</h3>
-          <p>
-            Script <strong>Selenium + Pandas</strong> automatisant l'envoi massif et
-            personnalisé de convocations aux candidats via WhatsApp, réduisant la charge
-            administrative d'un club.
-          </p>
-          <div class="project-links">
-            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Automatisation-RPA-Bot-WhatsApp" target="_blank" rel="noopener">Code source</a>
-          </div>
-        </div>
-      </article>
+          <article class="project">
+            <div class="tags"><span class="tag">RPA</span><span class="tag">Selenium</span><span class="tag">Pandas</span></div>
+            <h3>Automatisation Bot WhatsApp</h3>
+            <p><strong>Selenium + Pandas</strong> pour l'envoi automatisé et personnalisé de convocations aux candidats.</p>
+            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Automatisation-RPA-Bot-WhatsApp" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </article>
 
-      <!-- App mobile -->
-      <article class="project">
-        <div class="project-body">
-          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">QR Code</span></div>
-          <h3>📱 App Mobile — Gestion d'Événements</h3>
-          <p>
-            Application <strong>Flutter + Firebase</strong> avec génération et scan de
-            <strong>QR Code</strong> pour la gestion des présences et l'organisation d'événements.
-          </p>
-          <div class="project-links">
-            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Application-Mobile-de-Gestion-v-nementielle" target="_blank" rel="noopener">Code source</a>
-          </div>
+          <article class="project">
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">QR</span></div>
+            <h3>App Mobile — Gestion d'Événements</h3>
+            <p>Application <strong>Flutter + Firebase</strong> avec scan de <strong>QR Code</strong> pour la gestion des présences.</p>
+            <a class="btn btn-outline" href="https://github.com/KOURBISSE01/Application-Mobile-de-Gestion-v-nementielle" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </article>
         </div>
-      </article>
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
-<!-- CONTACT -->
-<footer class="contact" id="contact">
-  <div class="container">
-    <h2 class="section-title">Contact</h2>
-    <p class="section-lead">Je suis ouvert aux opportunités de stage et d'alternance en IA.</p>
-    <div class="contact-grid">
-      <a class="contact-card" href="mailto:Aymane.kourbisse@gmail.com">
-        <span class="contact-ico">📧</span>
-        <span class="contact-label">Email</span>
-        <span class="contact-val">Aymane.kourbisse@gmail.com</span>
-      </a>
-      <a class="contact-card" href="tel:+212657949375">
-        <span class="contact-ico">📱</span>
-        <span class="contact-label">Téléphone</span>
-        <span class="contact-val">06 57 94 93 75</span>
-      </a>
-      <a class="contact-card" href="https://github.com/KOURBISSE01" target="_blank" rel="noopener">
-        <span class="contact-ico">💻</span>
-        <span class="contact-label">GitHub</span>
-        <span class="contact-val">@KOURBISSE01</span>
-      </a>
-    </div>
-    <p class="footer-note">© <span id="year"></span> Aymane KOURBISSE — Développeur IA &amp; Applications</p>
-  </div>
-</footer>
+    <!-- CONTACT -->
+    <section class="slide" id="contact">
+      <div class="slide-inner">
+        <h2 class="slide-title">Contact</h2>
+        <p class="lede">Je suis ouvert aux opportunités de stage et d'alternance en IA.</p>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:Aymane.kourbisse@gmail.com"><i class="fas fa-envelope"></i><span>Aymane.kourbisse@gmail.com</span></a>
+          <a class="contact-item" href="tel:+212657949375"><i class="fas fa-phone"></i><span>06 57 94 93 75</span></a>
+          <a class="contact-item" href="https://github.com/KOURBISSE01" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>github.com/KOURBISSE01</span></a>
+          <a class="contact-item" href="https://kourbisse01.github.io/portfolio/" target="_blank" rel="noopener"><i class="fas fa-globe"></i><span>Portfolio en ligne</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- MOBILE TAB BAR -->
+<nav class="tabbar">
+  <a class="tab active" data-section="home" href="#home"><i class="fas fa-house"></i><span>Accueil</span></a>
+  <a class="tab" data-section="apropos" href="#apropos"><i class="fas fa-user"></i><span>À propos</span></a>
+  <a class="tab" data-section="projets" href="#projets"><i class="fas fa-briefcase"></i><span>Projets</span></a>
+  <a class="tab" data-section="contact" href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+</nav>
 
 <script src="scripts.js"></script>
 </body>
