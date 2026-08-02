@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Arrière-plan sombre & tech -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+
+    <!-- Dégradé néon IA -->
+    <linearGradient id="ai-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#4FACFE" />
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00F2FE" />
+      <stop offset="100%" stop-color="#9B51E0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fond -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="30"/>
+
+  <!-- Symbolisme : Réseau de Neurones & Monogramme AK -->
+  <g transform="translate(100, 80)">
+    <!-- Connexions / RAG Data Flow -->
+    <path d="M 70 180 L 150 60 L 230 180" stroke="url(#ai-grad)" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 110 120 L 190 120" stroke="url(#ai-grad)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M 150 60 L 150 200 L 230 100" stroke="#9B51E0" stroke-opacity="0.8" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="8 8"/>
+
+    <!-- Nœuds / Agents IA -->
+    <circle cx="150" cy="60" r="10" fill="#00F2FE" />
+    <circle cx="70" cy="180" r="10" fill="#00F2FE" />
+    <circle cx="230" cy="180" r="10" fill="#4FACFE" />
+    <circle cx="110" cy="120" r="7" fill="#9B51E0" />
+    <circle cx="190" cy="120" r="7" fill="#9B51E0" />
+    <circle cx="230" cy="100" r="8" fill="#00F2FE" />
+
+    <!-- Repère Computer Vision (Coins de cadrage) -->
+    <path d="M 40 40 L 40 20 M 40 20 L 60 20" stroke="#00F2FE" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 260 40 L 260 20 M 260 20 L 240 20" stroke="#00F2FE" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 40 200 L 40 220 M 40 220 L 60 220" stroke="#00F2FE" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M 260 200 L 260 220 M 260 220 L 240 220" stroke="#00F2FE" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Texte & Identité -->
+  <text x="250" y="340" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">
+    AYMANE KOURBISSE
+  </text>
+  
+  <text x="250" y="375" font-family="'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="14" fill="url(#accent-grad)" text-anchor="middle" letter-spacing="2">
+    AI &amp; APPLICATIONS DEVELOPER
+  </text>
+
+  <text x="250" y="405" font-family="'Segoe UI', Roboto, sans-serif" font-weight="400" font-size="11" fill="#9CA3AF" text-anchor="middle" letter-spacing="1">
+    GenAI • RAG • Computer Vision • AI Agents
+  </text>
+</svg>

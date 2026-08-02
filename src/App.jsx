@@ -86,8 +86,8 @@ export default function App() {
       {/* NAV */}
       <header className={`fixed top-0 inset-x-0 z-50 transition-all ${scrolled ? "bg-ink/80 backdrop-blur-md border-b border-line" : "bg-transparent"}`}>
         <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
-          <button onClick={() => scrollTo("home")} className="font-mono font-bold text-xl tracking-tight">
-            AK<span className="text-neon">.</span>
+          <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
+            <img src="logo.svg" alt="Logo" className="h-10 w-auto" />
           </button>
           <ul className="hidden md:flex gap-8">
             {NAV.map((n) => (
@@ -142,16 +142,13 @@ export default function App() {
             </div>
           </div>
 
-          {/* Profile image */}
+          {/* Profile cutout — transparent background, no circle */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-tr from-neon via-emerald to-violet opacity-60 blur-lg" />
-              <img
-                src="profile.jpg"
-                alt="Aymane KOURBISSE"
-                className="relative w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-neon/70 shadow-2xl"
-              />
-            </div>
+            <img
+              src="profile-cutout.png"
+              alt="Aymane KOURBISSE"
+              className="w-56 h-72 md:w-72 md:h-96 object-contain drop-shadow-2xl"
+            />
           </div>
         </div>
       </section>
