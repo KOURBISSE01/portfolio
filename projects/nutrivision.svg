@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#02121c"/>
+      <stop offset="55%" stop-color="#0a3d52"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <radialGradient id="r" cx="30%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#0e7490" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#02121c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#r)"/>
+  <g stroke="#67e8f9" stroke-opacity="0.25" stroke-width="1.5">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+  <circle cx="200" cy="180" r="46" fill="#67e8f9" fill-opacity="0.12" stroke="#67e8f9" stroke-width="1.5"/>
+  <circle cx="612" cy="330" r="70" fill="#2dd4bf" fill-opacity="0.10" stroke="#2dd4bf" stroke-width="1.5"/>
+  <circle cx="400" cy="250" r="30" fill="#67e8f9" fill-opacity="0.85"/>
+  <g stroke="#02121c" stroke-width="3" stroke-linecap="round">
+    <line x1="400" y1="224" x2="400" y2="276"/>
+    <line x1="374" y1="250" x2="426" y2="250"/>
+  </g>
+  <text x="400" y="452" text-anchor="middle" font-family="Geist, Inter, sans-serif" font-size="20" letter-spacing="6" fill="#a5f3fc" fill-opacity="0.85">NUTRIVISION</text>
+</svg>

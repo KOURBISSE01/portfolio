@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#450a0a"/>
+      <stop offset="55%" stop-color="#9f1239"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+    <radialGradient id="r" cx="65%" cy="60%" r="70%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#450a0a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#r)"/>
+  <g stroke="#fecdd3" stroke-opacity="0.25" stroke-width="1.5">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+  <rect x="330" y="150" width="140" height="200" rx="22" fill="#fff1f2" fill-opacity="0.92"/>
+  <rect x="348" y="172" width="104" height="44" rx="6" fill="#0a0a0a"/>
+  <g fill="none" stroke="#9f1239" stroke-width="4" stroke-linecap="round">
+    <path d="M376 260 a16 16 0 0 0 48 0 M376 285 a16 16 0 0 0 48 0"/>
+    <line x1="400" y1="238" x2="400" y2="252"/>
+  </g>
+  <text x="400" y="452" text-anchor="middle" font-family="Geist, Inter, sans-serif" font-size="20" letter-spacing="5" fill="#ffe4e6" fill-opacity="0.9">EVENT APP</text>
+</svg>
