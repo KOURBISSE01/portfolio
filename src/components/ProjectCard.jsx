@@ -2,10 +2,13 @@ function ProjectCard({ project }) {
   return (
     <article className="group overflow-hidden rounded-card border border-border bg-surface transition-colors hover:border-brand/40">
       <a href={project.link} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} — view on GitHub`}>
-        <div className="relative flex aspect-[16/10] items-center justify-center overflow-hidden bg-gradient-to-br from-brand-soft via-transparent to-neutral-faint/40">
-          <span className="select-none text-6xl opacity-90 transition-transform duration-500 group-hover:scale-110">
-            {project.icon}
-          </span>
+        <div className="relative aspect-[16/10] overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
           <div className="absolute inset-0 dots-lite opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
         </div>
 

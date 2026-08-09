@@ -7,7 +7,7 @@ const PROJECTS = [
     title: "NutriVision — AI Nutrition Assistant",
     subtitle: "Build with Gemma Hackathon 2026 · 🥈 2nd place",
     featured: true,
-    icon: "🥗",
+    image: "projects/nutrivision.svg",
     tags: ["Hackathon", "GenAI", "Computer Vision", "Agents"],
     description:
       "AI nutrition assistant that analyzes food photos, detects Moroccan dishes with YOLOv8 (70 dishes), provides nutritional analysis via Gemma 4B, and generates personalized recommendations and meal plans based on health conditions.",
@@ -20,7 +20,7 @@ const PROJECTS = [
   },
   {
     title: "Air Quality Prediction — LSTM",
-    icon: "🌬️",
+    image: "projects/air-quality.svg",
     tags: ["Deep Learning", "LSTM", "Forecasting"],
     description:
       "LSTM model predicting PM2.5 concentrations in Delhi from environmental time series, with MICE imputation and AQI alert system.",
@@ -28,7 +28,7 @@ const PROJECTS = [
   },
   {
     title: "WhatsApp Intelligent Chatbot — FSBM",
-    icon: "🤖",
+    image: "projects/whatsapp-bot.svg",
     tags: ["Rasa", "RAG", "Groq"],
     description:
       "University chatbot based on Rasa, RAG pipeline (ChromaDB, sentence-transformers) and Groq, answering academic questions.",
@@ -36,7 +36,7 @@ const PROJECTS = [
   },
   {
     title: "RPA Automation WhatsApp Bot",
-    icon: "⚙️",
+    image: "projects/rpa-bot.svg",
     tags: ["RPA", "Selenium", "Pandas"],
     description:
       "Python automation (Selenium + Pandas) for bulk personalized message sending of convocations integrated into a club's recruitment flow.",
@@ -44,7 +44,7 @@ const PROJECTS = [
   },
   {
     title: "Mobile App — Event Management",
-    icon: "📱",
+    image: "projects/event-app.svg",
     tags: ["Flutter", "Firebase", "QR Code"],
     description:
       "Flutter + Firebase mobile application with QR Code generation and scanning for event presence management.",
@@ -164,14 +164,23 @@ export default function App() {
         <section id="about" className="pt-16">
           <Reveal>
             <Heading num="01">About</Heading>
-            <p className="mt-6 text-lg leading-relaxed text-neutral-medium">
-              Junior AI developer specialized in{" "}
-              <span className="font-semibold text-neutral-strong">Artificial Intelligence, Machine Learning and GenAI</span>,
-              with practical experience in <span className="font-semibold text-neutral-strong">RAG, LLM, Computer Vision</span>{" "}
-              and AI agent development. Currently head of the IT cell at the Club des Jeunes Motivés.
-            </p>
           </Reveal>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          <Reveal delay={60}>
+            <div className="mt-8 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+              <img
+                src="profile.png"
+                alt="Aymane KOURBISSE"
+                className="h-44 w-44 shrink-0 rounded-card object-cover shadow-lg ring-1 ring-border sm:h-52 sm:w-52"
+              />
+              <p className="max-w-xl text-lg leading-relaxed text-neutral-medium">
+                Junior AI developer specialized in{" "}
+                <span className="font-semibold text-neutral-strong">Artificial Intelligence, Machine Learning and GenAI</span>,
+                with practical experience in <span className="font-semibold text-neutral-strong">RAG, LLM, Computer Vision</span>{" "}
+                and AI agent development. Currently head of the IT cell at the Club des Jeunes Motivés.
+              </p>
+            </div>
+          </Reveal>
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
               { icon: "🎯", title: "Objective", desc: "Contributing to innovative AI solutions in an internship or work-study role." },
               { icon: "🎓", title: "Education", desc: "Excellence License in AI — FS Ben M'Sik. DEUG in Software Development." },
@@ -222,7 +231,15 @@ export default function App() {
 
           {PROJECTS.filter((p) => p.featured).map((p, i) => (
             <Reveal key={p.title} delay={i * 100}>
-              <article className="mt-8 overflow-hidden rounded-card border border-brand/40 bg-surface p-6">
+              <article className="mt-8 overflow-hidden rounded-card border border-brand/40 bg-surface">
+                <div className="relative aspect-[16/8] w-full overflow-hidden md:aspect-[16/7]">
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-brand-soft px-3 py-1 text-xs font-medium text-brand">
                     <span className="inline-block h-1.5 w-1.5 rounded-full bg-brand" aria-hidden="true" />
@@ -254,6 +271,7 @@ export default function App() {
                   View source
                   <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
                 </a>
+                </div>
               </article>
             </Reveal>
           ))}

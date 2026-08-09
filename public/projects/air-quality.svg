@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="55%" stop-color="#4c1d95"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <radialGradient id="r" cx="70%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#r)"/>
+  <g stroke="#c4b5fd" stroke-opacity="0.25" stroke-width="1">
+    <line x1="0" y1="125" x2="800" y2="125"/>
+    <line x1="0" y1="250" x2="800" y2="250"/>
+    <line x1="0" y1="375" x2="800" y2="375"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+  <path d="M160 480 C 200 320, 300 150, 620 90" fill="none" stroke="#67e8f9" stroke-opacity="0.7" stroke-width="3"/>
+  <path d="M120 420 C 260 330, 330 180, 640 120" fill="none" stroke="#a5b4fc" stroke-opacity="0.35" stroke-width="1.5"/>
+  <circle cx="620" cy="90" r="9" fill="#67e8f9"/>
+  <circle cx="640" cy="120" r="6" fill="#a5b4fc"/>
+  <text x="400" y="452" text-anchor="middle" font-family="Geist, Inter, sans-serif" font-size="20" letter-spacing="6" fill="#e0e7ff" fill-opacity="0.9">AIR QUALITY</text>
+</svg>
