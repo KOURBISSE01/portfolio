@@ -40,7 +40,7 @@ function Header() {
             onClick={(e) => scrollTo(e, "home")}
             className="whitespace-nowrap text-sm font-semibold tracking-tight"
           >
-            Aymane<span className="text-brand">.</span>
+            Aymane KOURBISSE<span className="text-brand">.</span>
           </a>
           <ul className="flex items-center gap-1">
             {NAV.map((n) => (
