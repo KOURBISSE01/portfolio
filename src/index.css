@@ -2,20 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Once UI-style tokens ─────────────────────────────── */
+:root {
+  --page: 250 250 250;
+  --surface: 255 255 255;
+  --surface-raised: 255 255 255;
+  --neutral-strong: 24 24 27;
+  --neutral-medium: 82 82 91;
+  --neutral-weak: 113 113 122;
+  --neutral-faint: 228 228 231;
+  --brand: 8 145 178;
+  --brand-strong: 6 182 212;
+  --brand-soft: 234 244 248;
+  --accent: 220 38 38;
+  --border: 218 218 220;
+  --dots: 8 145 178;
+}
+
+html.dark {
+  --page: 10 10 12;
+  --surface: 20 20 24;
+  --surface-raised: 26 26 31;
+  --neutral-strong: 244 244 245;
+  --neutral-medium: 161 161 170;
+  --neutral-weak: 113 113 122;
+  --neutral-faint: 63 63 70;
+  --brand: 34 211 238;
+  --brand-strong: 34 211 238;
+  --brand-soft: 16 32 38;
+  --accent: 248 113 113;
+  --border: 39 39 46;
+  --dots: 34 211 238;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-ink text-white antialiased;
+  @apply bg-page text-neutral-strong antialiased;
+  font-feature-settings: "ss01", "cv01";
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #2a3456 transparent;
+::selection {
+  background: rgb(var(--brand) / 0.25);
 }
 
 /* Custom scrollbar aesthetic */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--neutral-faint)) transparent;
+}
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: #0a0f1e; }
-::-webkit-scrollbar-thumb { background: #2a3456; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgb(var(--neutral-faint)); border-radius: 8px; }
+
+/* ── Dots background (Once UI style) ──────────────────── */
+.dots-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(
+    circle at center,
+    rgb(var(--dots) / 0.32) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 26px 26px;
+  background-position: center;
+  opacity: 0.5;
+}
+
+/* Dots inside project cards (hover) */
+.dots-lite {
+  background-image: radial-gradient(
+    circle at center,
+    rgb(var(--dots) / 0.35) 1.2px,
+    transparent 1.2px
+  );
+  background-size: 18px 18px;
+  opacity: 0.5;
+}
+
+/* ── Reveal animation ─────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

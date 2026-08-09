@@ -1,19 +1,28 @@
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       colors: {
-        ink: "#0a0f1e",
-        "ink-2": "#0f1628",
-        card: "#121a30",
-        line: "#1f2a4a",
-        neon: "#22d3ee",
-        emerald: "#6ee7b7",
-        violet: "#a78bfa",
+        page: "rgb(var(--page) / <alpha-value>)",
+        surface: "rgb(var(--surface) / <alpha-value>)",
+        "neutral-strong": "rgb(var(--neutral-strong) / <alpha-value>)",
+        "neutral-medium": "rgb(var(--neutral-medium) / <alpha-value>)",
+        "neutral-weak": "rgb(var(--neutral-weak) / <alpha-value>)",
+        "neutral-faint": "rgb(var(--neutral-faint) / <alpha-value>)",
+        brand: "rgb(var(--brand) / <alpha-value>)",
+        "brand-strong": "rgb(var(--brand-strong) / <alpha-value>)",
+        "brand-soft": "rgb(var(--brand-soft) / <alpha-value>)",
+        accent: "rgb(var(--accent) / <alpha-value>)",
+        border: "rgb(var(--border) / <alpha-value>)",
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        mono: ["JetBrains Mono", "monospace"],
+        sans: ["Geist", "Inter", "system-ui", "sans-serif"],
+        mono: ["Geist Mono", "JetBrains Mono", "monospace"],
+      },
+      borderRadius: {
+        pill: "9999px",
+        card: "1rem",
       },
     },
   },
