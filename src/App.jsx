@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Reveal from "./components/Reveal";
 import ProjectCard from "./components/ProjectCard";
+import Icon from "./components/Icon";
 
 const PROJECTS = [
   {
@@ -54,22 +55,22 @@ const PROJECTS = [
 
 const SKILLS = [
   {
-    icon: "🧠",
+    icon: "brain",
     title: "AI & ML",
     items: ["Machine Learning", "Deep Learning", "LSTM", "TensorFlow", "Scikit-learn", "RAG", "Computer Vision", "LLM"],
   },
   {
-    icon: "💻",
+    icon: "code",
     title: "Languages",
     items: ["Python", "Java", "Kotlin", "C / C++", "JavaScript", "SQL"],
   },
   {
-    icon: "📊",
+    icon: "chart",
     title: "Data",
     items: ["NumPy", "Pandas", "Matplotlib", "Power BI", "Data Cleaning", "Data Viz"],
   },
   {
-    icon: "🛠️",
+    icon: "wrench",
     title: "Tools",
     items: ["Flutter", "Firebase", "Oracle SQL", "Selenium", "Git", "Linux"],
   },
@@ -182,13 +183,15 @@ export default function App() {
           </Reveal>
           <div className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              { icon: "🎯", title: "Objective", desc: "Contributing to innovative AI solutions in an internship or work-study role." },
-              { icon: "🎓", title: "Education", desc: "Excellence License in AI — FS Ben M'Sik. DEUG in Software Development." },
-              { icon: "⚡", title: "Activities", desc: "Head of IT at Club des Jeunes Motivés. Creative, independent, team player." },
+              { icon: "target", title: "Objective", desc: "Contributing to innovative AI solutions in an internship or work-study role." },
+              { icon: "graduation", title: "Education", desc: "Excellence License in AI — FS Ben M'Sik. DEUG in Software Development." },
+              { icon: "zap", title: "Activities", desc: "Head of IT at Club des Jeunes Motivés. Creative, independent, team player." },
             ].map((c, i) => (
               <Reveal key={c.title} delay={i * 80}>
                 <div className="flex h-full flex-col gap-2 rounded-card border border-border bg-surface p-5">
-                  <span className="text-2xl" aria-hidden="true">{c.icon}</span>
+                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-brand-soft text-brand">
+                    <Icon name={c.icon} className="h-5 w-5" />
+                  </span>
                   <h3 className="font-semibold">{c.title}</h3>
                   <p className="text-sm leading-relaxed text-neutral-weak">{c.desc}</p>
                 </div>
@@ -205,8 +208,10 @@ export default function App() {
               {SKILLS.map((s, i) => (
                 <Reveal key={s.title} delay={i * 80}>
                   <div className="h-full rounded-card border border-border bg-surface p-5">
-                    <div className="flex items-center gap-2">
-                      <span aria-hidden="true">{s.icon}</span>
+                    <div className="flex items-center gap-2.5">
+                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-brand-soft text-brand">
+                        <Icon name={s.icon} className="h-4.5 w-4.5" />
+                      </span>
                       <h3 className="font-semibold">{s.title}</h3>
                     </div>
                     <div className="mt-4 flex flex-wrap gap-2">
